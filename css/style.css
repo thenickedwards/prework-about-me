@@ -12,7 +12,8 @@ body {
 
 .masthead {
   padding: 6em 0;
-  background-image: url('../img/code.jpg');
+  /* background-image: url('../img/code.jpg'); */
+  /* background-image: url('https://raw.githubusercontent.com/thenickedwards/prework-about-me/master/img/code.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -67,4 +68,25 @@ section > h1 {
 .social > li {
   display: inline-block;
   margin: 0 5px;
+}
+
+.mark {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+          animation: 1.5s highlight 1.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
 }
